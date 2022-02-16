@@ -6,7 +6,7 @@
   <link href="https://lynprogram.github.io/shaelyn.github.io/atom.xml" rel="self"/>
   
   <link href="https://lynprogram.github.io/shaelyn.github.io/"/>
-  <updated>2022-02-16T03:21:14.410Z</updated>
+  <updated>2022-02-16T13:50:30.256Z</updated>
   <id>https://lynprogram.github.io/shaelyn.github.io/</id>
   
   <author>
@@ -17,22 +17,31 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://lynprogram.github.io/shaelyn.github.io/2022/02/16/hello-world/"/>
-    <id>https://lynprogram.github.io/shaelyn.github.io/2022/02/16/hello-world/</id>
-    <published>2022-02-16T03:21:14.409Z</published>
-    <updated>2022-02-16T03:21:14.410Z</updated>
+    <title>Hexo搭建github.io</title>
+    <link href="https://lynprogram.github.io/shaelyn.github.io/2022/02/16/hexo_github.io/"/>
+    <id>https://lynprogram.github.io/shaelyn.github.io/2022/02/16/hexo_github.io/</id>
+    <published>2022-02-15T16:00:00.000Z</published>
+    <updated>2022-02-16T13:50:30.256Z</updated>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[<p>Hexo搭建github.io创建blog,分为以下四步:</p><ol><li>github创建repo</li><li>Node.js安装</li><li>Hexo安装</li><li>Hexo主题更换</li></ol><p>此处省略第一二步，有时间再补</p><h2 id="Hexo-安装"><a href="#Hexo-安装" class="headerlink" title="Hexo 安装"></a>Hexo 安装</h2><ol><li>npm安装hexo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li><li>hexo初始化: 命令貌似需要在根目录执行，否则会报错<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure></li><li>进入blog文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate (hexo g)</span><br><span class="line">$ hexo server (hexo s)</span><br></pre></td></tr></table></figure></li><li>更新到remote<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy (hexo d)</span><br></pre></td></tr></table></figure></li></ol><h2 id="Hexo主题更换"><a href="#Hexo主题更换" class="headerlink" title="Hexo主题更换"></a>Hexo主题更换</h2><p>hexo的主题url: <a href="https://hexo.io/themes/">https://hexo.io/themes/</a> (点主题下方的name可以进入对应的git repo)<br>以下拿next举例:</p><ol><li><p>安装主题</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></li><li><p>修改_config.yml<br>theme: next</p></li><li><p>测试部署</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></li></ol>]]></content>
     
     
       
       
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
+    <summary type="html">&lt;p&gt;Hexo搭建github.io创建blog,分为以下四步:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;github创建repo&lt;/li&gt;
+&lt;li&gt;Node.js安装&lt;/li&gt;
+&lt;li&gt;Hexo安装&lt;/li&gt;
+&lt;li&gt;Hexo主题更换&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;此处省略第一二步，有时间再补</summary>
       
     
     
     
+    
+    <category term="Hexo" scheme="https://lynprogram.github.io/shaelyn.github.io/tags/Hexo/"/>
     
   </entry>
   
