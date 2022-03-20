@@ -3,11 +3,11 @@
   <title>Shaelyn</title>
   
   
-  <link href="https://shaelyn.github.io/atom.xml" rel="self"/>
+  <link href="https://shaelyncoding.github.io/atom.xml" rel="self"/>
   
-  <link href="https://shaelyn.github.io/"/>
-  <updated>2022-03-20T10:25:44.155Z</updated>
-  <id>https://shaelyn.github.io/</id>
+  <link href="https://shaelyncoding.github.io/"/>
+  <updated>2022-03-20T11:11:46.225Z</updated>
+  <id>https://shaelyncoding.github.io/</id>
   
   <author>
     <name>Shaelyn Sun</name>
@@ -18,55 +18,52 @@
   
   <entry>
     <title>Java基础知识</title>
-    <link href="https://shaelyn.github.io/2022/03/16/javaBasis/"/>
-    <id>https://shaelyn.github.io/2022/03/16/javaBasis/</id>
+    <link href="https://shaelyncoding.github.io/2022/03/16/javaBasis/"/>
+    <id>https://shaelyncoding.github.io/2022/03/16/javaBasis/</id>
     <published>2022-03-16T12:08:22.000Z</published>
-    <updated>2022-03-20T10:25:44.155Z</updated>
+    <updated>2022-03-20T11:11:46.225Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="Java语言特点"><a href="#Java语言特点" class="headerlink" title="Java语言特点"></a>Java语言特点</h2><ul><li>面向对象（封装，继承，多态）</li><li>平台无关性，一次编写，随处运行(Write once, run anywhere) -&gt; 跨平台；保证这一点的正是JVM机制</li><li>支持多线程（C++ 语言没有内置的多线程机制，因此必须调用操作系统的多线程功能来进行多线程程序设计，而 Java 语言却提供了多线程支持）</li><li>编译与解释并存</li></ul><h2 id="比较需要关注的方面"><a href="#比较需要关注的方面" class="headerlink" title="比较需要关注的方面:"></a>比较需要关注的方面:</h2><ul><li>jvm 内存区域/垃圾回收</li><li>类加载过程 class loader</li><li>反射/泛型/lamda</li><li>IO/NIO</li><li>解释执行/动态编译</li></ul><h2 id="JVM、JDK、JRE的区别"><a href="#JVM、JDK、JRE的区别" class="headerlink" title="JVM、JDK、JRE的区别"></a>JVM、JDK、JRE的区别</h2><p>JVM：Java Virtual Machine，Java 虚拟机，Java 程序运行在 Java 虚拟机上。针对不同系统的实现（Windows，Linux，macOS）不同的 JVM，因此 Java 语言可以实现跨平台。</p><p>JRE： Java Runtime Environment, Java 运⾏时环境。它是运⾏已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，Java 命令和其他的⼀些基础构件。但是，它不能⽤于创建新程序。</p><p>JDK: Java Development Kit，它是功能⻬全的 Java SDK。它拥有 JRE 所拥有的⼀切，还有编译器（javac）和⼯具（如 javadoc 和 jdb）。它能够创建和编译程序。</p><p><img src="/2022/03/16/javaBasis/jvm_jdk_jre.png" alt="JVM、JDK和JRE"></p><h2 id="Exception-Error"><a href="#Exception-Error" class="headerlink" title="Exception/Error"></a>Exception/Error</h2><h2 id="和equals的区别"><a href="#和equals的区别" class="headerlink" title="==和equals的区别"></a>==和equals的区别</h2><p>== 对于基本类型和引用类型的作用效果是不同的:</p><ul><li>对于基本数据类型来说，==比较的是值</li><li>对于引用数据类型来说，==比较的是对象的内存地址<blockquote><p>因为java只有值传递，所有对于==而言，不管是比较基本数据类型还是引用数据类型，本质都是比较值，只是引用类型变量存的值是对象的地址<br><code>equals</code>的比较：</p></blockquote></li></ul><ol><li>类没有覆盖<code>equals()</code>方法，等价于==，使用的默认是Object类equals()方法</li><li>类覆盖了<code>equals()</code>方法，一般都会覆盖<code>equals()</code>方法来比较两个对象的值是否相等，如String<h3 id="equals-hashcode"><a href="#equals-hashcode" class="headerlink" title="equals() / hashcode()"></a>equals() / hashcode()</h3></li></ol><ul><li>如果两个对象的hashCode 值相等，那这两个对象不一定相等（哈希碰撞）。 </li><li>如果两个对象的hashCode 值相等并且equals()方法返回 true，我们才认为这两个对象相等。 </li><li>如果两个对象的hashCode 值不相等，我们就可以直接认为这两个对象不相等。</li></ul>]]></content>
+    <content type="html"><![CDATA[<h2 id="Java语言特点"><a href="#Java语言特点" class="headerlink" title="Java语言特点"></a>Java语言特点</h2><ul><li>面向对象（封装，继承，多态）</li><li>平台无关性，一次编写，随处运行(Write once, run anywhere) -&gt; 跨平台；保证这一点的正是JVM机制</li><li>支持多线程（C++ 语言没有内置的多线程机制，因此必须调用操作系统的多线程功能来进行多线程程序设计，而 Java 语言却提供了多线程支持）</li><li>编译与解释并存<span id="more"></span><h2 id="比较需要关注的方面"><a href="#比较需要关注的方面" class="headerlink" title="比较需要关注的方面:"></a>比较需要关注的方面:</h2></li><li>jvm 内存区域/垃圾回收</li><li>类加载过程 class loader</li><li>反射/泛型/lamda</li><li>IO/NIO</li><li>解释执行/动态编译</li></ul><h2 id="JVM、JDK、JRE的区别"><a href="#JVM、JDK、JRE的区别" class="headerlink" title="JVM、JDK、JRE的区别"></a>JVM、JDK、JRE的区别</h2><p>JVM：Java Virtual Machine，Java 虚拟机，Java 程序运行在 Java 虚拟机上。针对不同系统的实现（Windows，Linux，macOS）不同的 JVM，因此 Java 语言可以实现跨平台。</p><p>JRE： Java Runtime Environment, Java 运⾏时环境。它是运⾏已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，Java 命令和其他的⼀些基础构件。但是，它不能⽤于创建新程序。</p><p>JDK: Java Development Kit，它是功能⻬全的 Java SDK。它拥有 JRE 所拥有的⼀切，还有编译器（javac）和⼯具（如 javadoc 和 jdb）。它能够创建和编译程序。</p><p><img src="/2022/03/16/javaBasis/jvm_jdk_jre.png" alt="JVM、JDK和JRE"></p><h2 id="Java源代码运行过程"><a href="#Java源代码运行过程" class="headerlink" title="Java源代码运行过程"></a>Java源代码运行过程</h2><h2 id="Exception-Error"><a href="#Exception-Error" class="headerlink" title="Exception/Error"></a>Exception/Error</h2><h2 id="和equals的区别"><a href="#和equals的区别" class="headerlink" title="==和equals的区别"></a>==和equals的区别</h2><p>== 对于基本类型和引用类型的作用效果是不同的:</p><ul><li>对于基本数据类型来说，==比较的是值</li><li>对于引用数据类型来说，==比较的是对象的内存地址<blockquote><p>因为java只有值传递，所有对于==而言，不管是比较基本数据类型还是引用数据类型，本质都是比较值，只是引用类型变量存的值是对象的地址<br><code>equals</code>的比较：</p></blockquote></li></ul><ol><li>类没有覆盖<code>equals()</code>方法，等价于==，使用的默认是Object类equals()方法</li><li>类覆盖了<code>equals()</code>方法，一般都会覆盖<code>equals()</code>方法来比较两个对象的值是否相等，如String<h3 id="equals-hashcode"><a href="#equals-hashcode" class="headerlink" title="equals() / hashcode()"></a>equals() / hashcode()</h3></li></ol><ul><li>如果两个对象的hashCode 值相等，那这两个对象不一定相等（哈希碰撞）。 </li><li>如果两个对象的hashCode 值相等并且equals()方法返回 true，我们才认为这两个对象相等。 </li><li>如果两个对象的hashCode 值不相等，我们就可以直接认为这两个对象不相等。</li></ul>]]></content>
     
     
-      
-      
     <summary type="html">&lt;h2 id=&quot;Java语言特点&quot;&gt;&lt;a href=&quot;#Java语言特点&quot; class=&quot;headerlink&quot; title=&quot;Java语言特点&quot;&gt;&lt;/a&gt;Java语言特点&lt;/h2&gt;&lt;ul&gt;
 &lt;li&gt;面向对象（封装，继承，多态）&lt;/li&gt;
-&lt;li&gt;平台无关性，一次编写，随处运行(</summary>
-      
+&lt;li&gt;平台无关性，一次编写，随处运行(Write once, run anywhere) -&amp;gt; 跨平台；保证这一点的正是JVM机制&lt;/li&gt;
+&lt;li&gt;支持多线程（C++ 语言没有内置的多线程机制，因此必须调用操作系统的多线程功能来进行多线程程序设计，而 Java 语言却提供了多线程支持）&lt;/li&gt;
+&lt;li&gt;编译与解释并存&lt;/li&gt;&lt;/ul&gt;</summary>
     
     
     
-    <category term="java" scheme="https://shaelyn.github.io/categories/java/"/>
+    <category term="java" scheme="https://shaelyncoding.github.io/categories/java/"/>
     
     
   </entry>
   
   <entry>
     <title>Leetcode 141 环形链表</title>
-    <link href="https://shaelyn.github.io/2020/02/17/hasCycle/"/>
-    <id>https://shaelyn.github.io/2020/02/17/hasCycle/</id>
+    <link href="https://shaelyncoding.github.io/2020/02/17/hasCycle/"/>
+    <id>https://shaelyncoding.github.io/2020/02/17/hasCycle/</id>
     <published>2020-02-17T13:38:46.000Z</published>
-    <updated>2022-02-17T13:42:56.240Z</updated>
+    <updated>2022-03-20T10:53:38.776Z</updated>
     
-    <content type="html"><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个链表的头节点 head ，判断链表中是否有环。</p><p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。</p><p>如果链表中存在环 ，则返回 true 。 否则，返回 false 。</p><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><ol><li>遍历node存入hashset，看是否已存在</li><li>快慢指针</li></ol>]]></content>
+    <content type="html"><![CDATA[<h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个链表的头节点 head ，判断链表中是否有环。</p><p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。</p><p>如果链表中存在环 ，则返回 true 。 否则，返回 false 。</p><span id="more"></span><h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><ol><li>遍历node存入hashset，看是否已存在</li><li>快慢指针</li></ol>]]></content>
     
     
-      
-      
     <summary type="html">&lt;h2 id=&quot;题目&quot;&gt;&lt;a href=&quot;#题目&quot; class=&quot;headerlink&quot; title=&quot;题目&quot;&gt;&lt;/a&gt;题目&lt;/h2&gt;&lt;p&gt;给你一个链表的头节点 head ，判断链表中是否有环。&lt;/p&gt;
-&lt;p&gt;如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表</summary>
-      
+&lt;p&gt;如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。&lt;/p&gt;
+&lt;p&gt;如果链表中存在环 ，则返回 true 。 否则，返回 false 。&lt;/p&gt;</summary>
     
     
     
-    <category term="算法" scheme="https://shaelyn.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://shaelyncoding.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
   </entry>
   
   <entry>
     <title>Leetcode 31 下一个排列</title>
-    <link href="https://shaelyn.github.io/2020/02/17/next-permutation/"/>
-    <id>https://shaelyn.github.io/2020/02/17/next-permutation/</id>
+    <link href="https://shaelyncoding.github.io/2020/02/17/next-permutation/"/>
+    <id>https://shaelyncoding.github.io/2020/02/17/next-permutation/</id>
     <published>2020-02-17T11:10:18.000Z</published>
     <updated>2022-03-20T09:16:27.374Z</updated>
     
@@ -77,15 +74,15 @@
     
     
     
-    <category term="算法" scheme="https://shaelyn.github.io/categories/%E7%AE%97%E6%B3%95/"/>
+    <category term="算法" scheme="https://shaelyncoding.github.io/categories/%E7%AE%97%E6%B3%95/"/>
     
     
   </entry>
   
   <entry>
     <title>Hexo搭建github.io</title>
-    <link href="https://shaelyn.github.io/2020/02/16/hexo_blog/"/>
-    <id>https://shaelyn.github.io/2020/02/16/hexo_blog/</id>
+    <link href="https://shaelyncoding.github.io/2020/02/16/hexo_blog/"/>
+    <id>https://shaelyncoding.github.io/2020/02/16/hexo_blog/</id>
     <published>2020-02-15T16:00:00.000Z</published>
     <updated>2022-02-17T13:28:02.144Z</updated>
     
@@ -96,10 +93,10 @@
     
     
     
-    <category term="配置" scheme="https://shaelyn.github.io/categories/%E9%85%8D%E7%BD%AE/"/>
+    <category term="配置" scheme="https://shaelyncoding.github.io/categories/%E9%85%8D%E7%BD%AE/"/>
     
     
-    <category term="Hexo" scheme="https://shaelyn.github.io/tags/Hexo/"/>
+    <category term="Hexo" scheme="https://shaelyncoding.github.io/tags/Hexo/"/>
     
   </entry>
   

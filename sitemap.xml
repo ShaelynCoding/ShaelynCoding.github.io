@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://shaelyn.github.io/2022/03/16/javaBasis/</loc>
+    <loc>https://shaelyncoding.github.io/2022/03/16/javaBasis/</loc>
     
     <lastmod>2022-03-20</lastmod>
     
@@ -11,7 +11,7 @@
   </url>
   
   <url>
-    <loc>https://shaelyn.github.io/2020/02/17/next-permutation/</loc>
+    <loc>https://shaelyncoding.github.io/2020/02/17/hasCycle/</loc>
     
     <lastmod>2022-03-20</lastmod>
     
@@ -20,7 +20,16 @@
   </url>
   
   <url>
-    <loc>https://shaelyn.github.io/2020/02/17/hasCycle/</loc>
+    <loc>https://shaelyncoding.github.io/2020/02/17/next-permutation/</loc>
+    
+    <lastmod>2022-03-20</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://shaelyncoding.github.io/2020/02/16/hexo_blog/</loc>
     
     <lastmod>2022-02-17</lastmod>
     
@@ -29,16 +38,7 @@
   </url>
   
   <url>
-    <loc>https://shaelyn.github.io/2020/02/16/hexo_blog/</loc>
-    
-    <lastmod>2022-02-17</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://shaelyn.github.io/categories/index.html</loc>
+    <loc>https://shaelyncoding.github.io/categories/index.html</loc>
     
     <lastmod>2022-02-16</lastmod>
     
@@ -47,7 +47,7 @@
   </url>
   
   <url>
-    <loc>https://shaelyn.github.io/tags/index.html</loc>
+    <loc>https://shaelyncoding.github.io/tags/index.html</loc>
     
     <lastmod>2022-02-16</lastmod>
     
@@ -57,7 +57,7 @@
   
 
   <url>
-    <loc>https://shaelyn.github.io/</loc>
+    <loc>https://shaelyncoding.github.io/</loc>
     <lastmod>2022-03-20</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
@@ -65,7 +65,7 @@
 
   
   <url>
-    <loc>https://shaelyn.github.io/tags/Hexo/</loc>
+    <loc>https://shaelyncoding.github.io/tags/Hexo/</loc>
     <lastmod>2022-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -74,21 +74,21 @@
 
   
   <url>
-    <loc>https://shaelyn.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
+    <loc>https://shaelyncoding.github.io/categories/%E7%AE%97%E6%B3%95/</loc>
     <lastmod>2022-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shaelyn.github.io/categories/java/</loc>
+    <loc>https://shaelyncoding.github.io/categories/%E9%85%8D%E7%BD%AE/</loc>
     <lastmod>2022-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
-    <loc>https://shaelyn.github.io/categories/%E9%85%8D%E7%BD%AE/</loc>
+    <loc>https://shaelyncoding.github.io/categories/java/</loc>
     <lastmod>2022-03-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

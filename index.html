@@ -18,18 +18,18 @@
 <link rel="stylesheet" href="https://unpkg.com/@fortawesome/fontawesome-free@5.15.4/css/all.min.css" integrity="sha256-mUZM63G8m73Mcidfrv5E+Y61y7a12O5mW4ezU3bxqW4=" crossorigin="anonymous">
   <link rel="stylesheet" href="https://unpkg.com/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<script class="next-config" data-name="main" type="application/json">{"hostname":"shaelyn.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.10.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"shaelyncoding.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.10.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
   <meta property="og:type" content="website">
 <meta property="og:title" content="Shaelyn">
-<meta property="og:url" content="https://shaelyn.github.io/index.html">
+<meta property="og:url" content="https://shaelyncoding.github.io/index.html">
 <meta property="og:site_name" content="Shaelyn">
 <meta property="og:locale" content="en_US">
 <meta property="article:author" content="Shaelyn Sun">
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="https://shaelyn.github.io/">
+<link rel="canonical" href="https://shaelyncoding.github.io/">
 
 
 
@@ -182,7 +182,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://shaelyn.github.io/2022/03/16/javaBasis/">
+    <link itemprop="mainEntityOfPage" href="https://shaelyncoding.github.io/2022/03/16/javaBasis/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -213,7 +213,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-03-20 18:25:44" itemprop="dateModified" datetime="2022-03-20T18:25:44+08:00">2022-03-20</time>
+      <time title="Modified: 2022-03-20 19:11:46" itemprop="dateModified" datetime="2022-03-20T19:11:46+08:00">2022-03-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -239,37 +239,15 @@
 <li>面向对象（封装，继承，多态）</li>
 <li>平台无关性，一次编写，随处运行(Write once, run anywhere) -&gt; 跨平台；保证这一点的正是JVM机制</li>
 <li>支持多线程（C++ 语言没有内置的多线程机制，因此必须调用操作系统的多线程功能来进行多线程程序设计，而 Java 语言却提供了多线程支持）</li>
-<li>编译与解释并存</li>
-</ul>
-<h2 id="比较需要关注的方面"><a href="#比较需要关注的方面" class="headerlink" title="比较需要关注的方面:"></a>比较需要关注的方面:</h2><ul>
-<li>jvm 内存区域/垃圾回收</li>
-<li>类加载过程 class loader</li>
-<li>反射/泛型/lamda</li>
-<li>IO/NIO</li>
-<li>解释执行/动态编译</li>
-</ul>
-<h2 id="JVM、JDK、JRE的区别"><a href="#JVM、JDK、JRE的区别" class="headerlink" title="JVM、JDK、JRE的区别"></a>JVM、JDK、JRE的区别</h2><p>JVM：Java Virtual Machine，Java 虚拟机，Java 程序运行在 Java 虚拟机上。针对不同系统的实现（Windows，Linux，macOS）不同的 JVM，因此 Java 语言可以实现跨平台。</p>
-<p>JRE： Java Runtime Environment, Java 运⾏时环境。它是运⾏已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，Java 命令和其他的⼀些基础构件。但是，它不能⽤于创建新程序。</p>
-<p>JDK: Java Development Kit，它是功能⻬全的 Java SDK。它拥有 JRE 所拥有的⼀切，还有编译器（javac）和⼯具（如 javadoc 和 jdb）。它能够创建和编译程序。</p>
-<p><img src="/2022/03/16/javaBasis/jvm_jdk_jre.png" alt="JVM、JDK和JRE"></p>
-<h2 id="Exception-Error"><a href="#Exception-Error" class="headerlink" title="Exception/Error"></a>Exception/Error</h2><h2 id="和equals的区别"><a href="#和equals的区别" class="headerlink" title="==和equals的区别"></a>==和equals的区别</h2><p>== 对于基本类型和引用类型的作用效果是不同的:</p>
-<ul>
-<li>对于基本数据类型来说，==比较的是值</li>
-<li>对于引用数据类型来说，==比较的是对象的内存地址<blockquote>
-<p>因为java只有值传递，所有对于==而言，不管是比较基本数据类型还是引用数据类型，本质都是比较值，只是引用类型变量存的值是对象的地址<br><code>equals</code>的比较：</p>
-</blockquote>
-</li>
-</ul>
-<ol>
-<li>类没有覆盖<code>equals()</code>方法，等价于==，使用的默认是Object类equals()方法</li>
-<li>类覆盖了<code>equals()</code>方法，一般都会覆盖<code>equals()</code>方法来比较两个对象的值是否相等，如String<h3 id="equals-hashcode"><a href="#equals-hashcode" class="headerlink" title="equals() / hashcode()"></a>equals() / hashcode()</h3></li>
-</ol>
-<ul>
-<li>如果两个对象的hashCode 值相等，那这两个对象不一定相等（哈希碰撞）。 </li>
-<li>如果两个对象的hashCode 值相等并且equals()方法返回 true，我们才认为这两个对象相等。 </li>
-<li>如果两个对象的hashCode 值不相等，我们就可以直接认为这两个对象不相等。</li>
-</ul>
-
+<li>编译与解释并存</li></ul>
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2022/03/16/javaBasis/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -295,7 +273,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://shaelyn.github.io/2020/02/17/hasCycle/">
+    <link itemprop="mainEntityOfPage" href="https://shaelyncoding.github.io/2020/02/17/hasCycle/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -326,7 +304,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-02-17 21:42:56" itemprop="dateModified" datetime="2022-02-17T21:42:56+08:00">2022-02-17</time>
+      <time title="Modified: 2022-03-20 18:53:38" itemprop="dateModified" datetime="2022-03-20T18:53:38+08:00">2022-03-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -351,11 +329,14 @@
           <h2 id="题目"><a href="#题目" class="headerlink" title="题目"></a>题目</h2><p>给你一个链表的头节点 head ，判断链表中是否有环。</p>
 <p>如果链表中有某个节点，可以通过连续跟踪 next 指针再次到达，则链表中存在环。 为了表示给定链表中的环，评测系统内部使用整数 pos 来表示链表尾连接到链表中的位置（索引从 0 开始）。注意：pos 不作为参数进行传递 。仅仅是为了标识链表的实际情况。</p>
 <p>如果链表中存在环 ，则返回 true 。 否则，返回 false 。</p>
-<h2 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h2><ol>
-<li>遍历node存入hashset，看是否已存在</li>
-<li>快慢指针</li>
-</ol>
-
+          <!--noindex-->
+            <div class="post-button">
+              <a class="btn" href="/2020/02/17/hasCycle/#more" rel="contents">
+                Read more &raquo;
+              </a>
+            </div>
+          <!--/noindex-->
+        
       
     </div>
 
@@ -381,7 +362,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://shaelyn.github.io/2020/02/17/next-permutation/">
+    <link itemprop="mainEntityOfPage" href="https://shaelyncoding.github.io/2020/02/17/next-permutation/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -468,7 +449,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="https://shaelyn.github.io/2020/02/16/hexo_blog/">
+    <link itemprop="mainEntityOfPage" href="https://shaelyncoding.github.io/2020/02/16/hexo_blog/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
