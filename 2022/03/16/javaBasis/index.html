@@ -20,28 +20,30 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"shaelyn.github.io","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.10.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
 
-  <meta name="description" content="Hexo搭建github.io创建blog,分为以下四步:">
+  <meta name="description" content="Java语言特点 面向对象（封装，继承，多态） 平台无关性，一次编写，随处运行(Write once, run anywhere) -&gt; 跨平台；保证这一点的正是JVM机制 支持多线程（C++ 语言没有内置的多线程机制，因此必须调用操作系统的多线程功能来进行多线程程序设计，而 Java 语言却提供了多线程支持） 编译与解释并存  比较需要关注的方面: jvm 内存区域&#x2F;垃圾回收 类加载过程">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo搭建github.io">
-<meta property="og:url" content="https://shaelyn.github.io/2020/02/16/hexo_blog/index.html">
+<meta property="og:title" content="Java基础知识">
+<meta property="og:url" content="https://shaelyn.github.io/2022/03/16/javaBasis/index.html">
 <meta property="og:site_name" content="Shaelyn">
-<meta property="og:description" content="Hexo搭建github.io创建blog,分为以下四步:">
+<meta property="og:description" content="Java语言特点 面向对象（封装，继承，多态） 平台无关性，一次编写，随处运行(Write once, run anywhere) -&gt; 跨平台；保证这一点的正是JVM机制 支持多线程（C++ 语言没有内置的多线程机制，因此必须调用操作系统的多线程功能来进行多线程程序设计，而 Java 语言却提供了多线程支持） 编译与解释并存  比较需要关注的方面: jvm 内存区域&#x2F;垃圾回收 类加载过程">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2020-02-15T16:00:00.000Z">
-<meta property="article:modified_time" content="2022-02-17T13:28:02.144Z">
+<meta property="og:image" content="https://shaelyn.github.io/public/images/jvm_jdk_jre.png">
+<meta property="og:image" content="https://shaelyn.github.io/2022/03/16/javaBasis/jvm_jdk_jre.png">
+<meta property="article:published_time" content="2022-03-16T12:08:22.000Z">
+<meta property="article:modified_time" content="2022-03-20T10:19:35.675Z">
 <meta property="article:author" content="Shaelyn Sun">
-<meta property="article:tag" content="Hexo">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://shaelyn.github.io/public/images/jvm_jdk_jre.png">
 
 
-<link rel="canonical" href="https://shaelyn.github.io/2020/02/16/hexo_blog/">
+<link rel="canonical" href="https://shaelyn.github.io/2022/03/16/javaBasis/">
 
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://shaelyn.github.io/2020/02/16/hexo_blog/","path":"2020/02/16/hexo_blog/","title":"Hexo搭建github.io"}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://shaelyn.github.io/2022/03/16/javaBasis/","path":"2022/03/16/javaBasis/","title":"Java基础知识"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title>Hexo搭建github.io | Shaelyn</title>
+<title>Java基础知识 | Shaelyn</title>
   
 
 
@@ -121,7 +123,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
-            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo-%E5%AE%89%E8%A3%85"><span class="nav-number">1.</span> <span class="nav-text">Hexo 安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E4%B8%BB%E9%A2%98%E6%9B%B4%E6%8D%A2"><span class="nav-number">2.</span> <span class="nav-text">Hexo主题更换</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E8%AE%BE%E7%BD%AEcategories-tags"><span class="nav-number">3.</span> <span class="nav-text">Hexo设置categories&#x2F;tags</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Hexo%E6%8F%92%E5%85%A5%E5%9B%BE%E7%89%87"><span class="nav-number">4.</span> <span class="nav-text">Hexo插入图片</span></a></li></ol></div>
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Java%E8%AF%AD%E8%A8%80%E7%89%B9%E7%82%B9"><span class="nav-number">1.</span> <span class="nav-text">Java语言特点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%AF%94%E8%BE%83%E9%9C%80%E8%A6%81%E5%85%B3%E6%B3%A8%E7%9A%84%E6%96%B9%E9%9D%A2"><span class="nav-number">2.</span> <span class="nav-text">比较需要关注的方面:</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JVM%E3%80%81JDK%E3%80%81JRE%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">3.</span> <span class="nav-text">JVM、JDK、JRE的区别</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Exception-Error"><span class="nav-number">4.</span> <span class="nav-text">Exception&#x2F;Error</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%92%8Cequals%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">5.</span> <span class="nav-text">&#x3D;&#x3D;和equals的区别</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#equals-hashcode"><span class="nav-number">5.1.</span> <span class="nav-text">equals() &#x2F; hashcode()</span></a></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -189,7 +191,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
-    <link itemprop="mainEntityOfPage" href="https://shaelyn.github.io/2020/02/16/hexo_blog/">
+    <link itemprop="mainEntityOfPage" href="https://shaelyn.github.io/2022/03/16/javaBasis/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.gif">
@@ -202,7 +204,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          Hexo搭建github.io
+          Java基础知识
         </h1>
 
         <div class="post-meta-container">
@@ -213,14 +215,14 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2020-02-16 00:00:00" itemprop="dateCreated datePublished" datetime="2020-02-16T00:00:00+08:00">2020-02-16</time>
+      <time title="Created: 2022-03-16 20:08:22" itemprop="dateCreated datePublished" datetime="2022-03-16T20:08:22+08:00">2022-03-16</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2022-02-17 21:28:02" itemprop="dateModified" datetime="2022-02-17T21:28:02+08:00">2022-02-17</time>
+      <time title="Modified: 2022-03-20 18:19:35" itemprop="dateModified" datetime="2022-03-20T18:19:35+08:00">2022-03-20</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -228,7 +230,7 @@
       </span>
       <span class="post-meta-item-text">In</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%85%8D%E7%BD%AE/" itemprop="url" rel="index"><span itemprop="name">配置</span></a>
+          <a href="/categories/java/" itemprop="url" rel="index"><span itemprop="name">java</span></a>
         </span>
     </span>
 
@@ -242,50 +244,41 @@
     
     
     <div class="post-body" itemprop="articleBody">
-        <p>Hexo搭建github.io创建blog,分为以下四步:</p>
-<span id="more"></span>
+        <h2 id="Java语言特点"><a href="#Java语言特点" class="headerlink" title="Java语言特点"></a>Java语言特点</h2><ul>
+<li>面向对象（封装，继承，多态）</li>
+<li>平台无关性，一次编写，随处运行(Write once, run anywhere) -&gt; 跨平台；保证这一点的正是JVM机制</li>
+<li>支持多线程（C++ 语言没有内置的多线程机制，因此必须调用操作系统的多线程功能来进行多线程程序设计，而 Java 语言却提供了多线程支持）</li>
+<li>编译与解释并存</li>
+</ul>
+<h2 id="比较需要关注的方面"><a href="#比较需要关注的方面" class="headerlink" title="比较需要关注的方面:"></a>比较需要关注的方面:</h2><ul>
+<li>jvm 内存区域/垃圾回收</li>
+<li>类加载过程 class loader</li>
+<li>反射/泛型/lamda</li>
+<li>IO/NIO</li>
+<li>解释执行/动态编译</li>
+</ul>
+<h2 id="JVM、JDK、JRE的区别"><a href="#JVM、JDK、JRE的区别" class="headerlink" title="JVM、JDK、JRE的区别"></a>JVM、JDK、JRE的区别</h2><p>JVM：Java Virtual Machine，Java 虚拟机，Java 程序运行在 Java 虚拟机上。针对不同系统的实现（Windows，Linux，macOS）不同的 JVM，因此 Java 语言可以实现跨平台。</p>
+<p>JRE： Java Runtime Environment, Java 运⾏时环境。它是运⾏已编译 Java 程序所需的所有内容的集合，包括 Java 虚拟机（JVM），Java 类库，Java 命令和其他的⼀些基础构件。但是，它不能⽤于创建新程序。</p>
+<p>JDK: Java Development Kit，它是功能⻬全的 Java SDK。它拥有 JRE 所拥有的⼀切，还有编译器（javac）和⼯具（如 javadoc 和 jdb）。它能够创建和编译程序。</p>
+<p><img src="/public/images/jvm_jdk_jre.png" alt="alt"><br><img src="/2022/03/16/javaBasis/jvm_jdk_jre.png" alt="alt"></p>
+
+<h2 id="Exception-Error"><a href="#Exception-Error" class="headerlink" title="Exception/Error"></a>Exception/Error</h2><h2 id="和equals的区别"><a href="#和equals的区别" class="headerlink" title="==和equals的区别"></a>==和equals的区别</h2><p>== 对于基本类型和引用类型的作用效果是不同的:</p>
+<ul>
+<li>对于基本数据类型来说，==比较的是值</li>
+<li>对于引用数据类型来说，==比较的是对象的内存地址<blockquote>
+<p>因为java只有值传递，所有对于==而言，不管是比较基本数据类型还是引用数据类型，本质都是比较值，只是引用类型变量存的值是对象的地址<br><code>equals</code>的比较：</p>
+</blockquote>
+</li>
+</ul>
 <ol>
-<li>github创建repo</li>
-<li>Node.js安装</li>
-<li>Hexo安装</li>
-<li>Hexo主题更换</li>
+<li>类没有覆盖<code>equals()</code>方法，等价于==，使用的默认是Object类equals()方法</li>
+<li>类覆盖了<code>equals()</code>方法，一般都会覆盖<code>equals()</code>方法来比较两个对象的值是否相等，如String<h3 id="equals-hashcode"><a href="#equals-hashcode" class="headerlink" title="equals() / hashcode()"></a>equals() / hashcode()</h3></li>
 </ol>
-<p>此处省略第一二步，有时间再补</p>
-<h2 id="Hexo-安装"><a href="#Hexo-安装" class="headerlink" title="Hexo 安装"></a>Hexo 安装</h2><ol>
-<li>npm安装hexo<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install -g hexo-cli</span><br></pre></td></tr></table></figure></li>
-<li>hexo初始化: 命令貌似需要在根目录执行，否则会报错<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo init blog</span><br></pre></td></tr></table></figure></li>
-<li>进入blog文件<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate (hexo g)</span><br><span class="line">$ hexo server (hexo s)</span><br></pre></td></tr></table></figure></li>
-<li>更新到remote<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy (hexo d)</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="Hexo主题更换"><a href="#Hexo主题更换" class="headerlink" title="Hexo主题更换"></a>Hexo主题更换</h2><p>hexo的主题url: <a target="_blank" rel="noopener" href="https://hexo.io/themes/">https://hexo.io/themes/</a> (点主题下方的name可以进入对应的git repo)<br>以下拿next举例:</p>
-<ol>
-<li><p>安装主题</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ git <span class="built_in">clone</span> https://github.com/theme-next/hexo-theme-next themes/next</span><br></pre></td></tr></table></figure></li>
-<li><p>修改_config.yml<br>theme: next</p>
-</li>
-<li><p>测试部署</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ hexo g</span><br><span class="line">$ hexo s</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure></li>
-</ol>
-<h2 id="Hexo设置categories-tags"><a href="#Hexo设置categories-tags" class="headerlink" title="Hexo设置categories/tags"></a>Hexo设置categories/tags</h2><ol>
-<li><p>在根目录下scaffolds/post.md中，添加一行 categories:</p>
-</li>
-<li><p>new page</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new page categories</span><br><span class="line">$ hexo new page tags</span><br></pre></td></tr></table></figure></li>
-<li><p>在categories/index.md最后加</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">type: &quot;categories&quot;</span><br><span class="line">layout: &quot;categories&quot;</span><br></pre></td></tr></table></figure>
-<p>tags同理</p>
-</li>
-<li><p>编写md文章的时候，在开头加上categories: 的标签</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">title: Hexo搭建github.io</span><br><span class="line">categories: </span><br><span class="line">  - 配置</span><br><span class="line">tags: </span><br><span class="line">  - Hexo</span><br><span class="line">date: 2020-02-16 00:00:00</span><br></pre></td></tr></table></figure>
-<h2 id="Hexo插入图片"><a href="#Hexo插入图片" class="headerlink" title="Hexo插入图片"></a>Hexo插入图片</h2></li>
-<li><p>安装插件</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ npm install hexo-asset-image --save</span><br></pre></td></tr></table></figure></li>
-<li><p>hexo的配置文件 _config.yml<br>post_asset_folder: true</p>
-</li>
-<li><p>自动生成文章同名文件夹用于存放照片</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new &lt;file-name&gt;</span><br></pre></td></tr></table></figure></li>
-<li></li>
-</ol>
+<ul>
+<li>如果两个对象的hashCode 值相等，那这两个对象不一定相等（哈希碰撞）。 </li>
+<li>如果两个对象的hashCode 值相等并且equals()方法返回 true，我们才认为这两个对象相等。 </li>
+<li>如果两个对象的hashCode 值不相等，我们就可以直接认为这两个对象不相等。</li>
+</ul>
 
     </div>
 
@@ -294,19 +287,16 @@
     
 
     <footer class="post-footer">
-          <div class="post-tags">
-              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
-          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
+                <a href="/2020/02/17/hasCycle/" rel="prev" title="Leetcode 141 环形链表">
+                  <i class="fa fa-chevron-left"></i> Leetcode 141 环形链表
+                </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2020/02/17/next-permutation/" rel="next" title="Leetcode 31 下一个排列">
-                  Leetcode 31 下一个排列 <i class="fa fa-chevron-right"></i>
-                </a>
             </div>
           </div>
     </footer>
